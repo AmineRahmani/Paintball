@@ -1,0 +1,211 @@
+$primary-color: #000000;
+$background-color: #f5f5f5;
+$hover-scale: 1.05;
+$border-radius: 10px;
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+.unique-form-container1 {
+  background: $background-color;
+  color: #333;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  width: 97%; // Pour s'adapter aux petits écrans
+  margin: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-align: center;
+
+  h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  table {
+    width: 90%;
+    margin-bottom: 20px;
+
+    td {
+      padding: 10px;
+      vertical-align: middle;
+    }
+
+    h3 {
+      font-size: 16px;
+      color: $primary-color;
+      margin: 0px;
+      margin-right: -150px;
+      margin-left: 70px;
+
+      @media (max-width: 768px) {
+        margin-right: -50px;
+        margin-left: 20px;
+      }
+
+      @media (max-width: 480px) {
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 14px;
+      }
+    }
+  }
+
+  input[type="number"],
+  input[type="date"],
+  input[type="time"] {
+    width: calc(70% - 59px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #201b1b;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: $primary-color;
+    }
+
+    @media (max-width: 768px) {
+      width: calc(100% - 20px);
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+
+  .extraordinary-button {
+    margin-left: 250px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    width: 252px;
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+
+  /* Un-comment and adjust if you want to use button styles 
+  button {
+    width: 100%; // Largeur complète pour le bouton
+    padding: 10px;
+    background: rgb(0, 119, 255);
+    color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      background: darken(rgb(0, 38, 255), 10%);
+      transform: scale($hover-scale);
+    }
+
+    span {
+      position: absolute;
+      display: block;
+
+      &:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #fff);
+        animation: btn-anim1 1s linear infinite;
+      }
+
+      &:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #fff);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+
+      &:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #fff);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+
+      &:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #fff);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+    }
+
+    @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+      50%, 100% {
+        left: 100%;
+      }
+    }
+
+    @keyframes btn-anim2 {
+      0% {
+        top: -100%;
+      }
+      50%, 100% {
+        top: 100%;
+      }
+    }
+
+    @keyframes btn-anim3 {
+      0% {
+        right: -100%;
+      }
+      50%, 100% {
+        right: 100%;
+      }
+    }
+
+    @keyframes btn-anim4 {
+      0% {
+        bottom: -100%;
+      }
+      50%, 100% {
+        bottom: 100%;
+      }
+    }
+  }*/
+
+  p {
+    font-size: 14px;
+    color: $primary-color;
+    margin-top: 20px;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+#site-content {
+    color: #000000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+  
+   
+  
+    .container {
+       padding: -10px;
+      
+    
+      .main-content {
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-top: 17.5px;
+          margin-left: -15px;
+  
+          .col-md-4 {
+            margin-top: -8px;
+            background:   rgb(220, 217, 228);
+            padding: 15px;
+            border-radius: 10px;
+            margin-left: 19px;
+            transition: transform 0.3s ease-in-out;
+  
+            &:hover {
+              transform: scale(1.05);
+            }
+  
+            .feature-image img {
+              max-width: 100%;
+              height: auto;
+              border-radius: 5px;
+            }
+  
+            .feature-title {
+              font-size: 22px;
+              color: #000000;
+            }
+  
+            .feature-subtitle {
+              color: #000000;
+            }
+          }
+        }
+  
+        .cta-section {
+          background-color: rgb(220, 217, 228);
+          margin-left: -1px;
+          padding: 10px;
+          width: 650px;
+          margin-top: 12px;
+          border-radius: 10px;
+        }
+        .cta-container {
+          display: flex;
+      }
+      
+      .cta-section {
+          /* Styles pour chaque section */
+          flex: 1; /* Pour que chaque section occupe la même largeur */
+          margin-right: 5px; /* Pour ajouter un espace entre les sections */
+      }
+      
+      }
+    }
+  }
+
+  .row{
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  .news {
+    list-style: none;
+    width: 550px;
+    height: 60;
+    
+    padding: 0;
+    margin: 0;
+  }
+  
+  .news li {
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .news li .date {
+    margin-left: -79%;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #803737;
+  }
+  
+  .news li .entry-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .read-more-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-left: 5px;
+    padding: 0;
+  }
+  
+  // Définir des variables pour les couleurs personnalisées
+$primary-color: #ff5733;
+$hover-color: #ff8c66;
+
+// Style du bouton
+.extraordinary-button {
+  // Styles de base
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  // Effet au survol
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  // Effet de focus
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(209, 57, 57, 0.3); // Ajoute une légère lueur autour du bouton lorsqu'il est en focus
+  }
+
+  // Effet de pression
+  &:active {
+    transform: translateY(2px); // Décale légèrement le bouton vers le bas lorsqu'il est enfoncé
+  }
+
+  // Animation
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  // Appliquer l'animation lorsqu'on survole le bouton
+  &:hover {
+    animation: pulse 1s infinite;
+  }
+}
+
+  
+  
+  

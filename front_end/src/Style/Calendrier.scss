@@ -1,0 +1,82 @@
+.wp-calendar {
+  width: 620px; // Ajusté pour un calendrier plus large
+  margin-top: 190px;
+  margin-left:-310px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ajouter une légère ombre pour l'effet de carte
+  border-radius: 10px; // Bordures arrondies pour un aspect plus doux
+  overflow: hidden; // Masquer tout débordement
+
+  th, td {
+    height: 30px; // Augmenté pour un meilleur espacement
+    text-align: center;
+    width: 50px;
+    vertical-align: middle;
+    border: 2px solid #ddd; // Bordure fine
+    padding: 10px;
+    transition: background-color 0.3s ease; // Transition douce pour le changement de couleur
+  }
+
+  th {
+    background-color: rgba(247, 247, 247, 0.9); // Fond gris clair transparent pour les en-têtes
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; // Texte en majuscules pour les jours de la semaine
+    letter-spacing: 1px; // Espacement des lettres pour une meilleure lisibilité
+  }
+
+  td {
+    background-color: rgba(255, 255, 255, 0.9); // Fond blanc transparent pour les cellules
+    color: #666;
+    font-size: 14px;
+
+    &:hover {
+      background-color: rgba(240, 240, 240, 0.9); // Effet de survol transparent pour les cellules
+      cursor: pointer; // Curseur pointeur pour indiquer que les cellules sont interactives
+    }
+
+    &.today {
+      background-color: rgba(255, 204, 0, 0.9); // Jaune vif transparent pour la date d'aujourd'hui
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px; // Arrondir légèrement la cellule du jour actuel
+    }
+  }
+
+  .month-header {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px; // Augmenté le padding pour un meilleur espacement
+    background-color: rgba(247, 247, 247, 0.9);
+    color: #333;
+    text-align: center;
+    text-transform: uppercase; // Texte en majuscules pour le mois et l'année
+    letter-spacing: 2px; // Espacement des lettres pour un effet stylisé
+  }
+}
+
+.calendar-container {
+  width: 00px;
+  height: 00px; // Augmentation de la hauteur
+  margin-left: 90px; // Déplacement vers la droite
+  margin-top: -250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent; // Fond blanc transparent pour le conteneur du calendrier
+ // Ajouter une légère ombre pour l'effet de carte
+  border-radius: 10px; // Bordures arrondies pour un aspect plus doux
+  padding: 20px; // Ajout de padding pour un meilleur espacement
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .wp-calendar {
+    width: 630px;
+    margin-left: 555px;
+  }
+}

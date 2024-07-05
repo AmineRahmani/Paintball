@@ -1,0 +1,215 @@
+$gallery-bg-color:linear-gradient(to right, #334d50 0%, #cbcaa5 100%);
+$gallery-primary-color: #14cc23;
+$gallery-border-radius: 10px;
+$gallery-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+$gallery-hover-scale: 1.05;
+
+#site-content{
+  padding: 20px;
+}
+
+
+.gallery-page-head {
+
+ 
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: $gallery-border-radius;
+}
+
+.gallery-main-content {
+  .gallery-section-title {
+    
+    font-weight: 300;
+    margin-bottom: 40px;
+    color:#463939;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .gallery-text-center {
+    .gallery-filter-links {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  
+      a {
+        color: #fff;
+        margin: 0 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px 15px;
+        border: 1px solid $gallery-primary-color;
+        border-radius: $gallery-border-radius;
+        transition: background 0.3s, color 0.3s;
+
+        &:hover,
+        &.gallery-current-filter {
+          background: $gallery-primary-color;
+          color: #000;
+        }
+      }
+
+      .gallery-mobile-filter {
+        display: none;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid $gallery-primary-color;
+        border-radius: $gallery-border-radius;
+        background: transparent;
+        color: #fff;
+      }
+    }
+  }
+
+  .gallery-filterable-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+
+    .gallery-item {
+      width: calc(30.333% - 20px);
+      margin-bottom: 20px;
+      position: relative;
+
+      a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        border-radius: $gallery-border-radius;
+        box-shadow: $gallery-box-shadow;
+        transition: transform 0.1s, box-shadow 0.9s;
+
+        &:hover {
+          transform: scale($gallery-hover-scale);
+          box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-featured-image {
+          display: block;
+          width: 120%;
+          height: 130%;
+          img {
+            display: block;
+            width: 70%;
+            height: 50%;
+            border-radius: $gallery-border-radius;
+            transition: transform 0.3s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-filterable-items {
+    .gallery-item {
+      width: calc(50% - 10px);
+    }
+  }
+  .gallery-filter-links {
+    .gallery-mobile-filter {
+      display: block;
+    }
+    a {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-filterable-items {
+    .gallery-item {
+      width: 100%;
+    }
+  }
+}
+
+
+.gallery-filter-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .gallery-filter-button {
+    background: none;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 16px;
+
+    &.gallery-current-filter {
+      font-weight: bold;
+      color: #000;
+    }
+
+    &:hover {
+      color: #007BFF;
+    }
+  }
+
+  .gallery-mobile-filter {
+    display: none;
+    margin-bottom: 20px;
+  }
+}
+
+.gallery-filterable-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .gallery-item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-featured-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-filter-links {
+    flex-direction: column;
+
+    .gallery-filter-button {
+      padding: 10px;
+    }
+
+    .gallery-mobile-filter {
+      display: block;
+    }
+  }
+
+  .gallery-filterable-items {
+    .gallery-item {
+      width: 100%;
+    }
+  }
+}

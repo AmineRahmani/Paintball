@@ -1,0 +1,74 @@
+/* FloatingChat.css */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: transparent; /* Transparent to show the image */
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .chat-button img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    z-index: 1000;
+    width: 300px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background-color: transparent;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      padding: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    .chat-button img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .chat-window {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 1000;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }

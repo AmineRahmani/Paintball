@@ -1,0 +1,36 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.starrating {
+  display: flex;
+ width: 10px;
+  justify-content: center;
+  gap: 0px;
+}
+
+.starrating > input {
+
+  display: none; /* Remove radio buttons */
+}
+
+.starrating > label:before {
+  content: "\f005"; /* Star */
+
+  margin: 69px;
+  margin-top: 40px;
+  font-size: 2.5em;
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.starrating > label {
+  color: #222222; /* Start color when not clicked */
+  cursor: pointer; /* Add cursor pointer for hover effect */
+}
+
+.starrating > input:checked ~ label {
+  color: #ffca08; /* Set yellow color when star checked */
+}
+
+.starrating > input:hover ~ label {
+  color: #ffca08; /* Set yellow color when star hover */
+}

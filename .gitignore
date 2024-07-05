@@ -1,0 +1,13 @@
+# React
+node_modules/
+build/
+.env
+
+# Django
+virtualenv/
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+
+Back_End/paintball/Scripts/back/back/asgi.py

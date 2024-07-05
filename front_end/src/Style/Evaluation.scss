@@ -1,0 +1,114 @@
+/* Evaluation.scss */
+.evaluation-container {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.evaluation-form {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+  margin: 0 auto;
+  margin-left: 40px;
+  flex-wrap: wrap; /* Permet de passer à la ligne sur les petits écrans */
+}
+
+.form-block {
+  flex: 1;
+  height: 140px;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour un effet de profondeur */
+}
+
+.form-block label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-block input,
+.form-block textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.evaluation-button1{
+  width: 190PX;
+  height: 50px;
+
+
+
+margin-top: 90px;
+margin-right: -60px;
+  background-color: #ff9100;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b37a00;
+}
+.center-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Ajoutez une marge supérieure si nécessaire */
+}
+
+.center-link a {
+  font-size: 18px; /* Ajustez la taille de la police si nécessaire */
+  text-decoration: none;
+  color: #000; /* Ajustez la couleur si nécessaire */
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .evaluation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement sur les petits écrans */
+  }
+
+  .evaluation-form {
+    display: flex;
+    flex-direction: column; /* Modifier la direction de flexion pour empiler les éléments */
+    align-items: center; /* Centrer les éléments horizontalement */
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 0; /* Réinitialiser la marge à gauche */
+  }
+
+  .form-block {
+    width: 90%; /* Ajuster la largeur pour les petits écrans */
+    margin: 10px 0; /* Ajuster la marge */
+    padding: 20px; /* Ajuster le rembourrage */
+    height: auto; /* Réinitialiser la hauteur à auto */
+  }
+
+  .evaluation-button1 {
+    width: 90%; /* Ajuster la largeur pour les petits écrans */
+    height: 50px;
+    margin: 20px auto; /* Centrer le bouton */
+    margin-top: 40px; /* Ajouter un espacement au-dessus du bouton */
+    margin-right: 0; /* Réinitialiser la marge à droite */
+  }
+
+  .center-link {
+    margin-top: 10px; /* Ajuster la marge supérieure si nécessaire */
+  }
+
+  .center-link a {
+    font-size: 16px; /* Ajuster la taille de la police si nécessaire */
+  }
+}
+
+ 

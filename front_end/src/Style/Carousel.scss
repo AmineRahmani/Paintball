@@ -1,0 +1,214 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 13px;
+
+  .slides {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .slide {
+    height: 430px;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      text-align: center;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+
+      .slide-title {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      .carousel-button {
+        background-color: #ff7300; /* Utilisation de la couleur primaire de Bootstrap */
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s, opacity 0.3s;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          border-radius: 10px;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+
+    .prev, .next {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      border: none;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &.active {
+        background: rgba(255, 255, 255, 1);
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 13px;
+  }
+
+  .carousel .slides {
+    display: flex;
+    transition: transform 0.9s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .carousel .slide {
+    height: 430px;
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel .slide .content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .carousel .slide .content .slide-title {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .carousel .slide .content .carousel-button {
+    background-color: #ff7300;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    border-radius: 10px;
+  }
+
+  .carousel .slide .content .carousel-button:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+
+  .carousel .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .carousel .controls .prev,
+  .carousel .controls .next {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .carousel .controls .prev:hover,
+  .carousel .controls .next:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel .dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel .dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .carousel .dots .dot.active {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .carousel .dots .dot:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+}

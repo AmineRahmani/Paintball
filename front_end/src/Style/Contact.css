@@ -1,0 +1,331 @@
+
+
+
+
+.contact-info, .contact-form {
+width: 60%;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-block: 50px;
+  margin-left: 240px;
+  flex: 1 1 45%;
+  
+ 
+}
+body{
+  padding: 20px;
+  margin-top: 10px;
+}
+
+
+
+.contact-detail span,
+.contact-detail address,
+.contact-detail a {
+  display: block;
+  color: #000000;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.contact-detail a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+  color: #000000;
+}
+
+.contact-form .user-box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 89%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.contact-form input:focus ~ label,
+.contact-form input:valid ~ label,
+.contact-form textarea:focus ~ label,
+.contact-form textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.contact-form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fd9a19;
+  color: #180505;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-top: 40px;
+}
+
+.contact-form button:hover {
+  background: #32cd32;
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ececec, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 100px #e0e0e0;
+}
+
+.contact-form button span {
+  position: absolute;
+  display: block;
+}
+
+.contact-form button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff0000);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% { left: -100%; }
+  50%, 100% { left: 100%; }
+}
+
+.contact-form button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ff0c0c);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% { top: -100%; }
+  50%, 100% { top: 100%; }
+}
+
+.contact-form button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ff0000);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% { right: -100%; }
+  50%, 100% { right: 100%; }
+}
+
+.contact-form button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ff0000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% { bottom: -100%; }
+  50%, 100% { bottom: 100%; }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-info, .contact-form {
+    width: 90%; /* Ajuster la largeur pour les écrans plus petits */
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin-block: 50px;
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+    flex: 1 1 100%; /* Ajuster la taille des éléments flexibles pour les écrans plus petits */
+  }
+  
+  body {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .contact-detail span,
+  .contact-detail address,
+  .contact-detail a {
+    display: block;
+    color: #000000;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+
+  .contact-detail a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-detail a:hover {
+    color: #000000;
+  }
+
+  .contact-form .user-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 89%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .contact-form label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  .contact-form input:focus ~ label,
+  .contact-form input:valid ~ label,
+  .contact-form textarea:focus ~ label,
+  .contact-form textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .contact-form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fd9a19;
+    color: #180505;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 40px;
+  }
+
+  .contact-form button:hover {
+    background: #32cd32;
+    color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ececec, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 100px #e0e0e0;
+  }
+
+  .contact-form button span {
+    position: absolute;
+    display: block;
+  }
+
+  .contact-form button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff0000);
+    animation: btn-anim1 1s linear infinite;
+  }
+
+  @keyframes btn-anim1 {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+  }
+
+  .contact-form button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ff0c0c);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+
+  @keyframes btn-anim2 {
+    0% { top: -100%; }
+    50%, 100% { top: 100%; }
+  }
+
+  .contact-form button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ff0000);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes btn-anim3 {
+    0% { right: -100%; }
+    50%, 100% { right: 100%; }
+  }
+
+  .contact-form button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ff0000);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+
+  @keyframes btn-anim4 {
+    0% { bottom: -100%; }
+    50%, 100% { bottom: 100%; }
+  }
+}
